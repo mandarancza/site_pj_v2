@@ -11,15 +11,15 @@ body{
 }
 
 #all{
-    background: url("images/index_background_opacity.jpg") no-repeat center center;
+    background: url("images/index_background_opacity_v2.jpg") no-repeat center center;
     width:100%;
-    height: 100%;
-    background-size: 100%;
+    height: 110%;
+    background-size: auto 100%;
     position: absolute;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-position-y: -100px;
+    /* background-position-y: -100px; */
 }
 
 
@@ -28,7 +28,7 @@ body{
     width: 100%;
     display: flex;
     background-color: rgba(0, 0, 0, 0.3);
-    justify-content: flex-start;
+    justify-content: center;
     height: 70px;
     margin-top: 50px;
 }
@@ -40,11 +40,11 @@ body{
     top: 0;
     margin-top: 15px;
     margin-left: 100px; */
-    height: 200%;
+    height: 150px;
     align-self: center;
-    margin-right: 150px;
-    margin-left: 200px;
-    
+    position: absolute;
+    left: 0;
+    margin-left: 150px;
 }
 
 .button{
@@ -66,5 +66,19 @@ body{
     background-size: 100%;
     width: 1000px;
     height: 250px;
-    /* background-color: red; */
+    margin-top: 100px;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+footer span{
+    align-self: center;
 }
