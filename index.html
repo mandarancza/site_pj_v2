@@ -5,21 +5,22 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="sidenav.js"></script>
+    <script type="text/javascript" src="insertBr.js"></script>
 
 </head>
 <body>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Strona Główna</a>
-        <a href="#">Galeria</a>
-        <a href="#">Kontakt</a>
+        <a href="#"><span style="white-space: nowrap; overflow: hidden;">STRONA GŁÓWNA</span></a>
+        <a href="#">GALERIA</a>
+        <a href="#">KONTAKT</a>
     </div>
 
     <div id="all">
             
         <div id="navbar">
-            <img src="images/logo_black.png" id="logo_navbar" />
+            <img src="images/logo_black_white_infill.png" id="logo_navbar" />
             <a href="index.html">
                 <button class="button">
                 STRONA GŁÓWNA
@@ -41,7 +42,7 @@
             <!-- <img  src="images\index_baner.png"> -->
         </div>
         <footer>
-            <span>© Copyright 2021 Projektowanie Wnętrz Ilona Obuchowicz. All rights reserved.</span>
+            <span>© Copyright 2021 Projektowanie Wnętrz Ilona Obuchowicz. <span id="brScript"></span>All rights reserved.</span>
         </footer>
     </div>
 </body>
