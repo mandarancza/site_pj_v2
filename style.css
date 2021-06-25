@@ -65,10 +65,12 @@ body{
 
 #baner{
     background: url("images/index_baner.png") no-repeat center center;
-    background-size: 100%;
+    background-size: 90%;
     width: 1000px;
     height: 250px;
     margin-top: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 footer{
@@ -93,8 +95,8 @@ footer span{
 
     #navbar{
         justify-content: space-between;
-        padding-right: 100px;
-        padding-left: 50px;
+        padding-right: 50px;
+        padding-left: 25px;
     }
 } 
 
