@@ -32,20 +32,12 @@ body{
     height: 60px;
     margin-top: 50px;
     padding-right: 150px;
+    margin-bottom: 50px;
 }
 
 #logo_navbar{
-    /* position: absolute;
-    height: 20%;
-    left: 0;
-    top: 0;
-    margin-top: 15px;
-    margin-left: 100px; */
     height: 150px;
     align-self: center;
-    /* position: absolute;
-    left: 0; 
-    margin-left: 15%;*/
     margin-right: 50px;
 }
 
@@ -82,7 +74,7 @@ footer{
     justify-content: center;
     font-size: 10px;
     text-align: center;
-    
+    margin-top: 50px;
 }
 /* 
 footer span{
@@ -93,34 +85,7 @@ footer span{
     align-self: center;
 }
 
-@media only screen and (max-width: 950px) {
-    .button{
-        display: none;
-    }
 
-    #navbar{
-        justify-content: space-between;
-        padding-right: 50px;
-        padding-left: 25px;
-    }
-
-    #all{
-        height: 100%;
-    }
-
-}
-
-@media only screen and (max-width: 700px) {
-    footer{
-        flex-direction: column;
-    }
-}
-
-@media only screen and (min-width: 950px){
-    #openNav{
-        display: none;
-    }
-}
 
 /* @media only screen and (max-height: 460px){
     #all{
@@ -171,8 +136,9 @@ footer span{
   }
 
   #openNav{
-    font-size:40px;
+    font-size:30px;
     cursor: pointer;
+    align-self: center;
   }
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -187,3 +153,86 @@ footer span{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 15px;}
   }  */
+
+
+
+  /* galeria */
+
+  .galeria_div{
+        width: 600px;
+        height: 200px;
+        background-color: greenyellow;
+        border: 1px black solid;
+        align-self: center;
+        
+  }
+  
+  .hoverContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 0)
+
+  }
+
+  .galeria_div:hover .hoverContainer{
+        background-color: rgba(0,0,0,0.2);
+        transition: 0.3s;
+        color: rgba(255, 255, 255, 1)
+    }
+  
+
+  .wiecej{
+        font-size: 18px;
+  }
+
+
+
+  /* media */
+
+  @media only screen and (max-width: 950px) {
+    .button{
+        display: none;
+    }
+
+    #navbar{
+        justify-content: space-between;
+        padding-right: 50px;
+        padding-left: 25px;
+        height: 40px;
+    }
+
+    #all{
+        height: 100%;
+    }
+
+    #logo_navbar{
+        height: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    footer{
+        flex-direction: column;
+    }
+
+    .galeria_div{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    #openNav{
+        display: none;
+    }
+
+    
+}
