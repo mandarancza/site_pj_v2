@@ -1,261 +1,251 @@
+/* ###################### for all ###################### */
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
 	margin:0;
-    padding:0;
-    box-sizing: border-box; 
+  padding:0;
+  box-sizing: border-box; 
 }
 
-body{
-    width: 100%;
-    height: 100%;
-    font-family: 'Rubik', sans-serif;
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 #all{
-    background: url("images/index_background_opacity_v2.jpg") no-repeat center center;
-    width:100%;
-    height: 110%;
-    background-size: cover;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* background-position-y: -100px; */
+  background: url("images/index_background_opacity_v2.jpg") no-repeat center center;
+  width:100%;
+  height: 110%;
+  background-size: cover;
+  
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-position-y: -100px; */
 }
-
-
 
 #navbar{
-    width: 100%;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
-    justify-content: center;
-    height: 60px;
-    margin-top: 50px;
-    padding-right: 150px;
-    margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  height: 60px;
+  margin-top: 50px;
+  padding-right: 150px;
+  margin-bottom: 50px;
 }
 
-
-/* Underline styles */
-a {
-    display: block;
-    position: relative;
-    padding: 0.2em 0;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0);
-  }
-  
-  /* Fade in */
-  a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.1em;
-    background-color: hotpink;
-    opacity: 0;
-    transition: opacity 300ms, transform 300ms;
-  }
-
-
-  .wiecej a::after {
-    opacity: 1;
-    transform: scale(0);
-    transform-origin: center;
-  }
-  
-  .wiecej a:hover::after,
-  .wiecej a:focus::after{
-    transform: scale(1);
-  }
-  
-
 #logo_navbar{
-    height: 150px;
-    align-self: center;
-    margin-right: 50px;
+  height: 150px;
+  align-self: center;
+  margin-right: 50px;
 }
 
 .button{
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    height: 100%;
-    width: 200px;
-    letter-spacing: 3px;
-    font-size: 15px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 200px;
+  letter-spacing: 3px;
+  font-size: 15px;
     
 }
 
 .button:hover{
-    background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #baner{
-    background: url("images/index_baner.png") no-repeat center center;
-    background-size: 90%;
-    width: 1000px;
-    height: 250px;
-    margin-top: 60px;
-    padding-right: 25px;
-    padding-left: 25px;
+  background: url("images/index_baner.png") no-repeat center center;
+  background-size: 90%;
+  width: 1000px;
+  height: 250px;
+  margin-top: 60px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 
 footer{
-    width: 100%;
-    height: 35px;
-    background-color: rgba(0, 0, 0, 0.3);
-    align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    font-size: 10px;
-    text-align: center;
-    margin-top: 50px;
+  width: 100%;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 50px;
 }
-/* 
-footer span{
-    align-self: center;
-} */
 
 .footerText{
-    align-self: center;
+  align-self: center;
 }
 
 
 
 
+/* ###################### side navigation menu ###################### */
 
-/* //////////////////////// */
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
 
- /* The side navigation menu */
- .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: black; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 3px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
   
-  /* The navigation menu links */
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 15px;
-    letter-spacing: 3px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
+}
+
+#openNav{
+  font-size:30px;
+  cursor: pointer;
+  align-self: center;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+
+
+/* ###################### galeria ###################### */
+
+.galeria_div{
+  width: 600px;
+  height: 200px;
+  background-color: greenyellow;
+  border: 1px black solid;
+  align-self: center;
+  background-size: 100% auto;
+  background-position-y: center;
   
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    
-  }
+}
 
-  #openNav{
-    font-size:30px;
-    cursor: pointer;
-    align-self: center;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
+.hoverContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  font-size: 25px;
+  color: white;
+  opacity: 0;
+}
 
+.galeria_div:hover .hoverContainer{
+  background-color: rgba(0,0,0,0.2);
+  transition: 0.3s;
+  opacity: 1;
+}
 
+.wiecej {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  width: 65px;
+  align-self: center;
+}
 
+.wiecej a{
+  color: white;
+  font-size: 18px;
+}
 
-  /* galeria */
+/* Fade in */
+.wiecej a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: hotpink;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
 
-  .galeria_div{
-        width: 600px;
-        height: 200px;
-        background-color: greenyellow;
-        border: 1px black solid;
-        align-self: center;
-        background-size: 100% auto;
-        background-position-y: center;
-        
-  }
-  
-  .hoverContainer{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center;
-        padding: 40px;
-        font-size: 25px;
-        color: rgba(255, 255, 255, 0)
-
-  }
-
-  .galeria_div:hover .hoverContainer{
-        background-color: rgba(0,0,0,0.2);
-        transition: 0.3s;
-        color: rgba(255, 255, 255, 1)
-    }
-
-    .galeria_div:hover a{
-        color: rgba(255, 255, 255, 1)
-    }
-  
-
-  .wiecej{
-        font-size: 18px;
-        width: 65px;
-        align-self: center;
-  }
+.wiecej a:hover::after,
+.wiecej a:focus::after{
+  transform: scale(1);
+}
 
 
 
-  /* pokaz slajdów  */
+
+/* ###################### slideshow ###################### */
 
 #slideshow{
   width: 800px;
-  height:max-content;
+  height: auto;
 }
 
-* {box-sizing: border-box;}
-.mySlides {
-  display: none;
-  width:100%;
-  height: 100%;
-
-}
-img {vertical-align: middle;}
-
-/* Slideshow container */
 .slideshow-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
   margin: auto;
   float: left;
 }
 
+.mySlides {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.mySlides img{
+  width: 100%;
+  height: 70vw;
+  object-fit:contain;
+  max-height: 500px;
+}
 
 
 /* The dots/bullets/indicators */
@@ -273,28 +263,6 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: fade;
-  animation-duration: 3s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
-
-
-/* galeria test */
 
 /* Next & previous buttons */
 .prev, .next {
@@ -311,69 +279,86 @@ img {vertical-align: middle;}
 	border-radius: 0 3px 3px 0;
 	user-select: none;
   background-color: rgba(255, 255, 255, 0.5);
-  }
+}
   
-  /* Position the "next button" to the right */
-  .next {
+/* Position the "next button" to the right */
+.next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+}
+
+.prev:hover, .next:hover {
 	background-color: rgba(255, 255, 255, 0.8);
-  }
+}
 
-  .active, .dot:hover {
+.active, .dot:hover {
 	background-color: #717171;
+}
+
+/* Fading animation */
+/* .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} */
+
+
+
+
+/* ###################### @media ###################### */
+
+@media only screen and (max-width: 950px) {
+
+  .button{
+    display: none;
   }
 
+  #navbar{
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 25px;
+    height: 40px;
+  }
 
+  #all{
+    height: 100%;
+  }
 
-
-
-
-
-  /* media */
-
-  @media only screen and (max-width: 950px) {
-    .button{
-        display: none;
-    }
-
-    #navbar{
-        justify-content: space-between;
-        padding-right: 50px;
-        padding-left: 25px;
-        height: 40px;
-    }
-
-    #all{
-        height: 100%;
-    }
-
-    #logo_navbar{
-        height: 100px;
-    }
+  #logo_navbar{
+    height: 100px;
+  }
 
 }
 
 @media only screen and (max-width: 700px) {
-    footer{
-        flex-direction: column;
-    }
 
-    .galeria_div{
-        width: 100%;
-    }
+  footer{
+    flex-direction: column;
+  }
+
+  .galeria_div{
+    width: 100%;
+  }
+
 }
 
 
 
 @media only screen and (min-width: 950px){
-    #openNav{
-        display: none;
-    }
 
-    
+  #openNav{
+    display: none;
+  }
+
 }
