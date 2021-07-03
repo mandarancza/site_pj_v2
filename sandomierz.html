@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="sidenav.js"></script>
+
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#"><span style="white-space: nowrap; overflow: hidden;">STRONA GŁÓWNA</span></a>
+        <a href="#">GALERIA</a>
+        <a href="#">KONTAKT</a>
+    </div>
+
+    <div id="all">
+            
+        <div id="navbar">
+            <img src="images/logo_gray_background.png" id="logo_navbar" />
+            <a href="index.html">
+                <button class="button">
+                STRONA GŁÓWNA
+                </button>
+            </a>
+            <a href="galeria.html">
+                <button class="button">
+                GALERIA
+                </button>
+            </a>
+            <a href="kontakt.html">
+                <button class="button">
+                KONTAKT
+                </button>
+            </a>
+            <span id="openNav" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div id="slideshow">
+			<div class="slideshow-container">
+				
+				<div class="mySlides fade">
+					<img src="images/galeria1/AA1.jpg" style="width:100%">
+				</div>
+				
+				<!-- <div class="mySlides fade">
+					<img src="images/galeria1/AA2.jpg" style="height:100%; display: block; margin-left: auto; margin-right: auto;">
+				</div> -->
+				
+				<div class="mySlides fade">
+					<img src="images/galeria1/AA3.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/galeria1/AA4.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/galeria1/AA5.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="images/galeria1/AA6.jpg" style="width:100%">
+				</div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span> 
+			<span class="dot" onclick="currentSlide(5)"></span> 
+			</div>
+			
+			<script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    dots[slideIndex-1].className += " active";
+                }
+			</script>
+
+			
+		</div>
+        
+        <footer>
+            <div class="footerText">© Copyright 2021 Projektowanie Wnętrz Ilona Obuchowicz.&nbsp;</div>
+            <div class="footerText">All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>

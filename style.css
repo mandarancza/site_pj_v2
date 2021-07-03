@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 * {
 	margin:0;
     padding:0;
@@ -7,7 +9,7 @@
 body{
     width: 100%;
     height: 100%;
-    font-family: Verdana;
+    font-family: 'Rubik', sans-serif;
 }
 
 #all{
@@ -34,6 +36,42 @@ body{
     padding-right: 150px;
     margin-bottom: 50px;
 }
+
+
+/* Underline styles */
+a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+  }
+  
+  /* Fade in */
+  a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: hotpink;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+  }
+
+
+  .wiecej a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  
+  .wiecej a:hover::after,
+  .wiecej a:focus::after{
+    transform: scale(1);
+  }
+  
 
 #logo_navbar{
     height: 150px;
@@ -87,11 +125,7 @@ footer span{
 
 
 
-/* @media only screen and (max-height: 460px){
-    #all{
-        background-size: 100% auto;
-    }
-} */
+
 
 /* //////////////////////// */
 
@@ -147,12 +181,6 @@ footer span{
     padding: 20px;
   }
 
-/*   
-  On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 15px;}
-  }  */
 
 
 
@@ -164,6 +192,8 @@ footer span{
         background-color: greenyellow;
         border: 1px black solid;
         align-self: center;
+        background-size: 100% auto;
+        background-position-y: center;
         
   }
   
@@ -187,11 +217,120 @@ footer span{
         transition: 0.3s;
         color: rgba(255, 255, 255, 1)
     }
+
+    .galeria_div:hover a{
+        color: rgba(255, 255, 255, 1)
+    }
   
 
   .wiecej{
         font-size: 18px;
+        width: 65px;
+        align-self: center;
   }
+
+
+
+  /* pokaz slajdów  */
+
+#slideshow{
+  width: 800px;
+  height:max-content;
+}
+
+* {box-sizing: border-box;}
+.mySlides {
+  display: none;
+  width:100%;
+  height: 100%;
+
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  float: left;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+/* galeria test */
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .active, .dot:hover {
+	background-color: #717171;
+  }
+
+
+
+
 
 
 
@@ -228,6 +367,8 @@ footer span{
         width: 100%;
     }
 }
+
+
 
 @media only screen and (min-width: 950px){
     #openNav{
