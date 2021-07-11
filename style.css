@@ -162,15 +162,23 @@ footer{
 
 /* ###################### galeria ###################### */
 
+#realizacje{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1100px;
+  height: min-content;
+}
+
 .galeria_div{
   width: 550px;
   height: 250px;
   background-color: greenyellow;
-  border: 1px black solid;
   align-self: center;
   background-size: 100% auto;
   background-position-y: center;
-  
+  border: 1px solid black;
+  margin: none;
 }
 
 .hoverContainer{
@@ -353,7 +361,7 @@ footer{
 
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 550px) {
 
   footer{
     flex-direction: column;
