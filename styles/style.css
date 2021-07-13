@@ -76,7 +76,7 @@ a {
 
 #baner{
   background: url("../images/index_baner.png") no-repeat center center;
-  background-size: 90%;
+  background-size: 100%;
   width: 1000px;
   height: 250px;
   margin-top: 60px;
@@ -94,7 +94,7 @@ a {
 
 .opis{
   margin-top: 35vh;
-  line-height: 25px;
+  line-height: 30px;
   /* width: 100%;
   background-color: rgb(104, 104, 104, 0.5);
   height: 200px;
