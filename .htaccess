@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^projekty\-wnetrza\.eu$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.projekty\-wnetrza\.eu$
+RewriteRule ^(.*)$ "https\:\/\/projekty\-wnetrza\.eu\/$1" [R=301,L]
+

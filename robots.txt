@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://projekty-wnetrza.eu/sitemap.xml
