@@ -90,7 +90,7 @@ a {
   color: #474747;
   text-align: justify;
   font-size: 17px;
-  margin-top: 35vh;
+  margin-top: 20vh;
   line-height: 30px;
 }
 
@@ -108,6 +108,11 @@ footer{
 
 .footerText{
   align-self: center;
+}
+
+#index_wrap{
+  display: flex;
+  flex-direction: column;
 }
 
 
