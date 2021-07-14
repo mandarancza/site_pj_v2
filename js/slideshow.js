@@ -1,4 +1,16 @@
 var slideIndex = 1;
+
+document.addEventListener('keydown', arrowSlides);
+
+function arrowSlides(e) {
+  if(e.code == "ArrowRight"){
+      plusSlides(1)
+  }
+  else if(e.code == "ArrowLeft"){
+      plusSlides(-1)
+  }
+}
+
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -24,3 +36,4 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
+
