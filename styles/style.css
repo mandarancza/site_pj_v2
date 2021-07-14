@@ -74,19 +74,22 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+#index_wrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 950px;
+  padding: 10px;
+}
+
 #baner{
   background: url("../images/index_baner.png") no-repeat center center;
   background-size: 100%;
-  width: 950px;
+  width: 100%;
   height: 250px;
   margin-top: 60px;
-  padding-right: 25px;
-  padding-left: 25px;
 }
 
 .opis{
-  width: 950px;
-  padding: 10px;
   color: #474747;
   text-align: justify;
   font-size: 17px;
@@ -110,10 +113,6 @@ footer{
   align-self: center;
 }
 
-#index_wrap{
-  display: flex;
-  flex-direction: column;
-}
 
 
 
@@ -134,7 +133,6 @@ footer{
 #kontaktBaner{
   background: url("../images/kontakt_baner.png") no-repeat center center;
   background-size: 100%;
-  /* background-color: blue; */
   width: 100%;
   height: 200px;
   margin: 0 30px 0 30px;
